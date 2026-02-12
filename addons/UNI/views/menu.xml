@@ -1,0 +1,11 @@
+<odoo>
+
+    <menuitem id="uni_main_menu" name="University System"/>
+
+    <menuitem id="menu_university" name="University" parent="uni_main_menu" action="university_action"/>
+    <menuitem id="menu_students" name="Students" parent="uni_main_menu" action="students_action"/>
+    <menuitem id="menu_teacher" name="Teacher" parent="uni_main_menu" action="teacher_action"/>
+    <menuitem id="menu_subject" name="Subject" parent="uni_main_menu" action="subject_action"/>
+    <menuitem id="menu_classroom" name="Classroom" parent="uni_main_menu" action="classroom_action"/>
+
+</odoo>

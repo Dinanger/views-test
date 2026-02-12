@@ -31,9 +31,9 @@ class studens(models.Model):
         string="uni"
     )
 
-@api.constrains('age')
-def age_cheack(self):
-    for age in self:
-        if age<17:
-            raise ValueError(
-            "MUST BE OLDER THAN 17")
+
+    @api.constrains('age')
+    def age_check(self):
+        for record in self:
+            if record.age < 17:
+                raise ValidationError("Student must be older than 17 years")

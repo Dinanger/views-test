@@ -1,0 +1,56 @@
+
+<!-- ================================================== -->
+<!-- STUDENTS -->
+<!-- ================================================== -->
+<odoo>
+
+<record id="students_form_view" model="ir.ui.view">
+    <field name="name">students.form</field>
+    <field name="model">students.university</field>
+    <field name="arch" type="xml">
+        <form string="Students">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="grade"/>
+                    <field name="university"/>
+                </group>
+
+                <notebook>
+                    <page string="Courses">
+                        <field name="courses"/>
+                    </page>
+                    <page string="Teachers">
+                        <field name="teacher"/>
+                    </page>
+                    <page string="Subjects">
+                        <field name="subject"/>
+                    </page>
+                </notebook>
+
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="students_tree_view" model="ir.ui.view">
+    <field name="name">students.tree</field>
+    <field name="model">students.university</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="age"/>
+            <field name="grade"/>
+        </tree>
+    </field>
+</record>
+
+<record id="students_action" model="ir.actions.act_window">
+    <field name="name">Students</field>
+    <field name="res_model">students.university</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+</odoo>
+

@@ -1,0 +1,36 @@
+<odoo>
+
+
+
+<record id="classroom_form_view" model="ir.ui.view">
+    <field name="name">classroom.form</field>
+    <field name="model">classroom.university</field>
+    <field name="arch" type="xml">
+        <form string="Classroom">
+            <sheet>
+                <group>
+                    <field name="numid"/>
+                    <field name="teacher"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="classroom_tree_view" model="ir.ui.view">
+    <field name="name">classroom.tree</field>
+    <field name="model">classroom.university</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="numid"/>
+            <field name="teacher"/>
+        </tree>
+    </field>
+</record>
+
+<record id="classroom_action" model="ir.actions.act_window">
+    <field name="name">Classroom</field>
+    <field name="res_model">classroom.university</field>
+    <field name="view_mode">tree,form</field>
+</record>
+</odoo>
