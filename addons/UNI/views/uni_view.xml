@@ -1,0 +1,39 @@
+<!-- ================================================== -->
+<!-- UNIVERSITY -->
+<!-- ================================================== -->
+<odoo>
+<record id="university_form_view" model="ir.ui.view">
+    <field name="name">university.form</field>
+    <field name="model">university</field>
+    <field name="arch" type="xml">
+        <form string="University">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                </group>
+
+                <notebook>
+                    <page string="Teachers">
+                        <field name="teacher"/>
+                    </page>
+                    <page string="Students">
+                        <field name="students"/>
+                    </page>
+                </notebook>
+
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="university_tree_view" model="ir.ui.view">
+    <field name="name">university.tree</field>
+    <field name="model">university</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+</odoo>

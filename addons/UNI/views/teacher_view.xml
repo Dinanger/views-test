@@ -1,0 +1,50 @@
+<!-- ================================================== -->
+<!-- TEACHER -->
+<!-- ================================================== -->
+<odoo>
+
+<record id="teacher_form_view" model="ir.ui.view">
+    <field name="name">teacher.form</field>
+    <field name="model">teacher.university</field>
+    <field name="arch" type="xml">
+        <form string="Teacher">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="university"/>
+                </group>
+
+                <notebook>
+                    <page string="Subjects">
+                        <field name="subjects"/>
+                    </page>
+                    <page string="Students">
+                        <field name="students"/>
+                    </page>
+                    <page string="Classrooms">
+                        <field name="classroom"/>
+                    </page>
+                </notebook>
+
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="teacher_tree_view" model="ir.ui.view">
+    <field name="name">teacher.tree</field>
+    <field name="model">teacher.university</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+
+<record id="teacher_action" model="ir.actions.act_window">
+    <field name="name">Teacher</field>
+    <field name="res_model">teacher.university</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+</odoo>

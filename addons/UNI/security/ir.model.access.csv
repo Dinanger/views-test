@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_university,access_university,model_university,,1,1,1,1
+access_students,access_students,model_students_university,,1,1,1,1
+access_teacher,access_teacher,model_teacher_university,,1,1,1,1
+access_subject,access_subject,model_subject_university,,1,1,1,1
+access_classroom,access_classroom,model_classroom_university,,1,1,1,1
