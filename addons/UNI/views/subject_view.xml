@@ -21,10 +21,10 @@
     <field name="name">subject.tree</field>
     <field name="model">subject.university</field>
     <field name="arch" type="xml">
-        <tree>
+        <list>
             <field name="name"/>
             <field name="value"/>
-        </tree>
+        </list>
     </field>
 </record>
 

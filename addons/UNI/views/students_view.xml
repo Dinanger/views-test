@@ -38,11 +38,11 @@
     <field name="name">students.tree</field>
     <field name="model">students.university</field>
     <field name="arch" type="xml">
-        <tree>
+        <list>
             <field name="name"/>
             <field name="age"/>
             <field name="grade"/>
-        </tree>
+        </list>
     </field>
 </record>
 

@@ -26,10 +26,3 @@ class teacher(models.Model):
     )
 
 
-@api.constrains('subjects')
-def _check_subjects(self):
-    for rec in self:
-        if not rec.subjects:
-            raise ValidationError(
-                "A teacher must have at least one subject."
-            )

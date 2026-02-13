@@ -31,9 +31,9 @@
     <field name="name">university.tree</field>
     <field name="model">university</field>
     <field name="arch" type="xml">
-        <tree>
+        <list>
             <field name="name"/>
-        </tree>
+        </list>
     </field>
 </record>
 </odoo>

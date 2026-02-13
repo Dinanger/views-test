@@ -21,10 +21,10 @@
     <field name="name">classroom.tree</field>
     <field name="model">classroom.university</field>
     <field name="arch" type="xml">
-        <tree>
+        <list>
             <field name="numid"/>
             <field name="teacher"/>
-        </tree>
+        </list>
     </field>
 </record>
 
