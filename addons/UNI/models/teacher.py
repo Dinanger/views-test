@@ -1,5 +1,4 @@
 from odoo import models, fields, api
-from odoo.exceptions import ValidationError
 
 
 class teacher(models.Model):
@@ -18,11 +17,11 @@ class teacher(models.Model):
     classroom = fields.One2many(
         "classroom.university",
         "teacher",
-        string="classroom"
+        string="classroom",  required=True
     )
     university = fields.Many2one(
         "university",
-        string="uni"
+        string="uni", required=True
     )
 
 

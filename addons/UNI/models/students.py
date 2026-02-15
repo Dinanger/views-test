@@ -20,7 +20,7 @@ class studens(models.Model):
 
     teacher = fields.Many2many(
         "teacher.university",
-        string="teacher"
+        string="teacher", required=True
             )
     subject = fields.Many2many(
         "subject.university",
@@ -28,8 +28,18 @@ class studens(models.Model):
     )
     university = fields.Many2one(
         "university",
-        string="uni"
+        string="uni", required=True
     )
+   
+    @api.constrains('age')
+    def _check_age(self):
+        for rec in self:
+            if rec.age < 16:
+                raise ValidationError("Age must be older than 16")
+
+
+
+    
 
 
   
