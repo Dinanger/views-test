@@ -1,4 +1,5 @@
 from odoo import models, api, fields
+from odoo.exceptions import ValidationError
 
 
 class university(models.Model):
@@ -17,3 +18,5 @@ class university(models.Model):
         "university",
         string="students"
     )
+
+ 

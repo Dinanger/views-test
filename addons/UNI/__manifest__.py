@@ -12,6 +12,7 @@
     "views/teacher_view.xml",
     "views/subject_view.xml",
     "views/classroom.xml",
+    "views/hm",
     "views/menu.xml",
 ],
 }
