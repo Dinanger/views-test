@@ -16,7 +16,7 @@ class university(models.Model):
     students = fields.One2many(
         "students.university",
         "university",
-        string="students"
+        string="studentss"
     )
 
  
